@@ -1,0 +1,978 @@
+/* Colors
+Base: #3BF7FF
+Darker: #2AB0E8
+Bluer: #2E8AFF
+Green: #2AE8B9
+Greener: #2EFF90
+
+2FC7CC
+*/
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* ----- HEADINGS ----- */
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #3BF7FF;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* ----- PARAGRAPHS ----- */
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/* ----- ICONS ----- */
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #2FC7CC;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /*secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* ----- LINKS ----- */
+
+a:link,
+a:visited {
+    color: #2FC7CC;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #2FC7CC;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #3BF7FF;
+    border-bottom: 1px solid transparent;
+}
+
+/* ----- BUTTONS ----- */
+a:link,
+a:visited {
+    color: #2FC7CC;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #2FC7CC;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #3BF7FF;
+    border-bottom: 1px solid transparent;
+}
+
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #3BF7FF;
+    border: 1px solid #3BF7FF;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #3BF7FF;
+    color: #fff;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #3BF8FF;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #3BF8FF;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #3BF8FF;
+    color: #1a1a1a;
+    font-weight: 300;
+}
+
+/*
+.btn1,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    background-color: transparent;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn1:hover,
+input[type=submit]:hover {
+    background-color: #3BF8FF;
+    cursor:pointer
+}
+
+.btn-ghost1,
+input[type=submit] {
+    border: 1px solid #3BF7FF;
+    color: #fff;
+}
+
+.btn-ghost1:hover,
+input[type=submit]:hover {
+    border: 1px solid #3BF8FF;
+    color: #1a1a1a;
+    font-weight: 300;
+    cursor:pointer
+}
+
+*/
+
+/* ----------------------------------------------- */
+/* Header */
+/* ----------------------------------------------- */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.home {
+    background-image: radial-gradient(rgba(0,0,0.8), rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(img/1.jpg);
+}
+
+
+.logo {
+    position: absolute;
+    height: 100px;
+    float:none;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: blink 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main-nav {
+    float: right;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.hero-text-box {
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+
+.menu {
+    position: absolute;
+    margin-top: 3.2%;
+    margin-left: 4%;
+    color: #2FC7CC;
+    font-size: 170%;
+}
+
+
+/* ------------------------------------------------------ */
+/* Sign Up */
+/* ------------------------------------------------------ */
+
+.signup{
+    background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(img/Back2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+}
+.qrow h2{
+    color: #fff;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+.title{
+    color: #fff;
+    font-size: 120%;
+    padding-right: 10%;
+    float: right;
+}
+.space {
+    float: left;
+    background-color: rgba(255, 255, 255, 0.65);
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    margin-top: 2%;
+}
+
+.submit{
+    margin-top: 2%;
+    margin-left: 46%;
+    margin-bottom: 5%;
+}
+
+/* ------------------------------------------------------ */
+/* Sign In */
+/* ------------------------------------------------------ */
+
+.signin{
+    background-image: radial-gradient(rgba(0,0,0,1),rgba(0,0,0,0)), url(img/1.jpg);
+    background-position: bottom;
+    
+}
+.google-btn{
+    margin-left: 7%;
+    float: left;
+}
+
+.login{
+    margin-right: 5%;
+    float: right;
+}
+.login-all{
+    transform: translate(0%,75%);
+}
+.login-head{
+    margin-top: ;
+    color: #fff;
+}
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+    background-color: #060606;
+    padding: 30px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+    
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-googleplus,
+.ion-logo-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-logo-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-logo-twitter:hover {
+    color: #00aced;
+}
+
+.ion-logo-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-logo-instagram:hover {
+    color: #517fa4;
+}
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* ----------------------------------------------- */
+/* Games Reusable*/
+/* ----------------------------------------------- */
+
+.homepage {
+    margin: 0;
+    padding: 0;
+    background-color: #0b0b0b;
+    overflow-y: hidden;
+}
+
+.panel {
+    width: 100%;
+    height: 20vh;
+    margin-top: 8%;
+}
+
+.game-panel {
+    margin: 0;
+    padding: 0;
+    height: 220px;
+    width: auto;
+    margin-bottom: 100px;
+}
+.game-panel:first-child {
+    margin-right: 12%;
+}
+.game-panel:last-child {
+    float: right;
+}
+
+.top-sec {
+    height: 75%;
+    background-size: cover;
+    background-position: center;
+} 
+
+.home-name{
+    width: 300%;
+    color: #bababa;
+    padding-top: 145%;
+    text-align: center;
+}
+
+.home-logo {
+    transform: translate(0,30%);
+    width: 100%;
+    height: auto;
+}
+
+.bottom-sec {
+    height: 90%;
+    width: auto;
+    background-color: #060606;
+}
+
+.home-b {
+    text-align: center;
+}
+
+.home-b:first-child {
+    margin-top: 17%;
+}
+
+.home-b:last-child {
+    margin-top: 7%;
+}
+
+
+.top-forza {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.80)), url(img/forza/2.jpg);
+}
+
+.top-fs {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.80)), url(img/fs/3.jpg);
+}
+
+/*------- Glowing Button -------*/
+
+ .bottom-sec a {
+    padding: 3px 25px;
+    margin-top: 100;
+    text-decoration: none;
+    line-height: 150%;
+    position: relative;
+    color: #dbdbdb;
+    text-transform: capitalize;
+    text-align: center;
+    background: linear-gradient(90deg, #00b0ff, #00b0ff);
+    background-size: 400%;
+    border-radius: 30px;
+    z-index: 1;
+    border: 9px;
+}
+.bottom-sec a:hover {
+    animation: animate 8s linear infinite;
+    border: 0px;
+}
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+.bottom-sec a:before {
+    content: '';
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    bottom: -5%;
+    left: -5%;
+    z-index: -1;
+    background: linear-gradient(90deg, #00b0ff, #00b0ff);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.bottom-sec a:hover:before {
+    filter: blur(20px);
+    opacity: 0.8;
+    animation: animate 8s linear infinite;
+}
+
+
+/* ----------------------------------------------- */
+/* Games Reusable*/
+/* ----------------------------------------------- */
+
+.game-logo {
+    height: 120%;
+    width: 120%;
+    margin: auto;
+}
+
+.game-name {
+    margin: 2% 10%;
+    font-size: 130%;
+    color: #fff;
+}
+
+.game-dev {
+    padding: 2% 10%;
+    font-size: 65%;
+    color: #bababa;
+}
+
+.game-bar {
+    margin-top: 11%;
+}
+
+.g-size {
+    float: right;
+    margin-right: 220px;
+    margin-top: 3%;
+    font-size: 90%;
+    color: #bababa;
+}
+
+
+.star-text {
+    /*margin-left: 11%;*/
+    margin-right: 5%;
+    margin-top: -4%;
+    padding-bottom: 4%;
+    color: #bababa;
+}
+
+.star {
+    color: rgba(66, 197, 255, 0.95);
+}
+
+.rating {
+    margin-left: 50%;
+    /*margin-top: -2%;*/
+}
+
+.star:first-child{
+    /*margin-left: 11%;*/
+}
+
+.star:last-child {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.age-rating {
+    float: right;
+    margin-right: 120px;
+    color: #bababa;
+}
+
+.trop {
+    font-size: 200%;
+    margin-left: 18%;
+    margin-top: -7%;
+    color: #bababa;
+}
+
+.tropp {
+    float: right;
+    margin-top: 5%;
+    color: #bababa;
+}
+
+/*------- Glowing Button -------*/
+
+.name-sec a {
+    width: 110px;
+    height: auto;
+    margin-left: 568px;
+    margin-top: 30px;
+    line-height: 150%;
+    position: absolute;
+    text-decoration: none;
+    color: #dbdbdb;
+    text-transform: capitalize;
+    text-align: center;
+    background: linear-gradient(90deg, #00b0ff, #00b0ff);
+    background-size: 400%;
+    border-radius: 30px;
+    z-index: 1;
+    
+    border: 0px;
+}
+.name-sec a:hover {
+    animation: animate 8s linear infinite;
+    border: 0px;
+}
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+.name-sec a:before {
+    content: '';
+    position: absolute;
+    top: -5%;
+    right: -5%;
+    bottom: -5%;
+    left: -5%;
+    z-index: -1;
+    background: linear-gradient(90deg, #00b0ff, #00b0ff);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.name-sec a:hover:before {
+    filter: blur(20px);
+    opacity: 0.8;
+    animation: animate 8s linear infinite;
+}
+
+/* ----------------------------------------------- */
+/* Forza Horizon 4 */
+/* ----------------------------------------------- */
+
+.forza{
+    background-color: #0b0b0b;
+    height: 45%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*------- Image jQuery -------*/
+
+.cS-hidden {
+    height: 1px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    overflow: hidden;
+}
+
+/*------- Image Section -------*/
+
+.image {
+    background-color: #0b0b0b;
+    margin: 0;
+    padding: 4% 0;
+    height: 25vh;
+}
+
+.img-showcase {
+    width: 100%;
+    height: 25%;
+    list-style: none;
+}
+
+.img-showcase li{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    display: block;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #000;
+}
+.photo img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/*------- Description -------*/
+
+.desc {
+    margin: 0;
+    padding: 8% 0 6% 0;
+    background-color: #0b0b0b;
+}
+
+.description {
+    background-color: #0b0b0b;
+    color: #bababa;
+}
+
+
+/*------- Trailer -------*/
+
+.trailer {
+    background-color: #0b0b0b;
+    height: auto;
+    width: 100%;
+}
+
+.trail {
+    display: block;
+    transform: translateX(-6%);
+    
+}
+
+.trailer-video {
+
+}
+
+
+
+.top-csgo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.80)), url(img/csgo/3.jpg);
+}
+
+.top-dota {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.80)), url(img/dota/3.jpg);
+}
+
+.top-fifa {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.80)), url(img/fifa/3.png);
+}
+
+.top-cod {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.80)), url(img/cod/3.jpg);
+}
+
+.top-gta {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.80)), url(img/gta/3.jpg);
+}
+
+.top-fn {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.80)), url(img/fn/3.jpg);
+}
+
+.top-al {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.80)), url(img/al/3.jpg);
+}
+
+.top-pubg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.80)), url(img/pubg/3.jpg);
+}
+
+.top-fc {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.80)), url(img/fc/3.jpg);
+}
+
+.top-mc {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.80)), url(img/mc/3.jpg);
+}
+
+
+/* ----------------------------------------------- */
+/* About Us */
+/* ----------------------------------------------- */
+
+.about {
+    width: 100%;
+    background-color: #0b0b0b;
+}
+
+.about-us h2 {
+    padding-top: 13%;
+    color: #bababa;
+}
+
+.about-us p {
+    color: #bababa;
+    text-align: justify;
+}
+
+.about2 {
+    background-color: #0b0b0b;
+}
+
+.about2 h2 {
+    color: #bababa;
+}
+
+.about-pic {
+    width: 33.33%;
+    margin: 0 auto;
+}
+
+.about-about {
+    color: #bababa;
+    width: 90%;
+    margin: 2% auto;
+    text-align: justify;
+}
+
+
+/* ----------------------------------------------- */
+/* Contact Us */
+/* ----------------------------------------------- */
+
+.contact {
+    width: 100%;
+    background-color: #0b0b0b;
+}
+
+.about-us h2 {
+    padding-top: 13%;
+    color: #bababa;
+}
+
+.about-us p {
+    color: #bababa;
+    text-align: justify;
+}
+
+.cu-button {
+    padding-top: 3%;
+    padding-left: 41%;
+}
+
+.contact2 {
+    background-color: #0b0b0b;
+}
+
+.contact2 h2 {
+    color: #bababa;
+}
+
+.about-pic {
+    width: 33.33%;
+    margin: 0 auto;
+}
+
+.contact-p {
+    color: #bababa;
+    width: 90%;
+    margin: 2% auto;
+    text-align: justify;
+}
+
+.con-dev {
+    padding-top: 5%;
+    color: #bababa;
+}
+
+.con-dev-l p{
+    float: right;
+    padding: 10.3%;
+}
+
+.con-dev-r p{
+    float: left;
+    padding: 5%;
+}
+
+/* ------------------------------------------------------ */
+/* Not Found Page */
+/* ------------------------------------------------------ */
+
+.nf {
+    height: 88vh;
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.7),rgba(0,0,0,0.1)), url(img/nf.png);
+    background-size: cover;
+    background-position: left;
+}
+
+.nf h4{
+    position: absolute;
+    color: #fff;
+    letter-spacing: 0.2em;
+    font-family: lato;
+    font-size: 120%;
+    top: 18%;
+    margin: 8%;
+    line-height: 150%;
+}
+
+.nff {
+    height: 15vh;
+}
+
